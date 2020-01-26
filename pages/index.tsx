@@ -19,6 +19,7 @@ const Index: React.FC = () => {
                 <Flex
                              display="flex"
                              alignItems="baseline"
+                             justifyContent="center"
                              py={4}
                              flexWrap="wrap"
                 >
@@ -38,6 +39,7 @@ const Index: React.FC = () => {
                              alignItems="baseline"
                              py={4}
                              flexWrap="wrap"
+                             justifyContent="center"
                 >
                     <Box width={1/2}>
                         <FormLabel htmlFor="choice-2">ประเภทที่ 2</FormLabel>
@@ -55,6 +57,7 @@ const Index: React.FC = () => {
                              alignItems="baseline"
                              py={4}
                              flexWrap="wrap"
+                             justifyContent="center"
                 >
                     <Box width={1/2}>
                         <FormLabel htmlFor="choice-3">ประเภทที่ 3</FormLabel>
@@ -67,7 +70,7 @@ const Index: React.FC = () => {
                         </Select>
                     </Box>
                 </Flex>
-                <Flex justifyContent="center">
+                <Flex justifyContent="center" textAlign="center">
                     <Button variantColor="red" >Submit</Button>
                 </Flex>
             </FormControl>
