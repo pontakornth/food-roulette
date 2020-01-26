@@ -1,10 +1,10 @@
-import {Box, Flex, Heading, FormControl, FormLabel, useTheme, Select} from '@chakra-ui/core';
+import {Box, Flex, Button, Heading, FormControl, FormLabel, useTheme, Select} from '@chakra-ui/core';
 const Index: React.FC = () => {
     const theme = useTheme();
     return (
     <Flex p={4} 
     width="100vw" 
-    bg="orange.200" 
+    bg="red.400" 
     height="100vh"
     justifyContent="center"
     >
@@ -15,41 +15,61 @@ const Index: React.FC = () => {
          bg="white"
          >
             <Heading color="gray.700" as="h1" size="xl">Food Roulette</Heading>
-            <FormControl
-            display="flex"
-            alignItems="baseline"
-            py={4}
-            >
-                <Box width={1/2}>
-                    <FormLabel htmlFor="choice-1">ประเภทที่ 1</FormLabel>
-                </Box>
-                <Box width={1/2}>
-                    <Select name="choice-1" placeholder="ข้าว">
-                        <option value="ข้าว">ข้าว</option>
-                        <option value="หมู">หมู</option>
-                        <option value="ไก่">ไก่</option>
-                    </Select>
-                </Box>
-                <Box width={1/2}>
-                    <FormLabel htmlFor="choice-1">ประเภทที่ 1</FormLabel>
-                </Box>
-                <Box width={1/2}>
-                    <Select name="choice-1" placeholder="ข้าว">
-                        <option value="ข้าว">ข้าว</option>
-                        <option value="หมู">หมู</option>
-                        <option value="ไก่">ไก่</option>
-                    </Select>
-                </Box>
-                <Box width={1/2}>
-                    <FormLabel htmlFor="choice-1">ประเภทที่ 1</FormLabel>
-                </Box>
-                <Box width={1/2}>
-                    <Select name="choice-1" placeholder="ข้าว">
-                        <option value="ข้าว">ข้าว</option>
-                        <option value="หมู">หมู</option>
-                        <option value="ไก่">ไก่</option>
-                    </Select>
-                </Box>
+            <FormControl>
+                <Flex
+                             display="flex"
+                             alignItems="baseline"
+                             py={4}
+                             flexWrap="wrap"
+                >
+                    <Box width={1/2}>
+                        <FormLabel htmlFor="choice-1">ประเภทที่ 1</FormLabel>
+                    </Box>
+                    <Box width={1/2}>
+                        <Select name="choice-1" placeholder="ข้าว">
+                            <option value="ข้าว">ข้าว</option>
+                            <option value="หมู">หมู</option>
+                            <option value="ไก่">ไก่</option>
+                        </Select>
+                    </Box>
+                </Flex>
+                <Flex
+                             display="flex"
+                             alignItems="baseline"
+                             py={4}
+                             flexWrap="wrap"
+                >
+                    <Box width={1/2}>
+                        <FormLabel htmlFor="choice-2">ประเภทที่ 2</FormLabel>
+                    </Box>
+                    <Box width={1/2}>
+                        <Select name="choice-2" placeholder="ข้าว">
+                            <option value="ข้าว">ข้าว</option>
+                            <option value="หมู">หมู</option>
+                            <option value="ไก่">ไก่</option>
+                        </Select>
+                    </Box>
+                </Flex>
+                <Flex
+                             display="flex"
+                             alignItems="baseline"
+                             py={4}
+                             flexWrap="wrap"
+                >
+                    <Box width={1/2}>
+                        <FormLabel htmlFor="choice-3">ประเภทที่ 3</FormLabel>
+                    </Box>
+                    <Box width={1/2}>
+                        <Select name="choice-3" placeholder="ข้าว">
+                            <option value="ข้าว">ข้าว</option>
+                            <option value="หมู">หมู</option>
+                            <option value="ไก่">ไก่</option>
+                        </Select>
+                    </Box>
+                </Flex>
+                <Flex justifyContent="center">
+                    <Button variantColor="red" >Submit</Button>
+                </Flex>
             </FormControl>
         </Box>
     </Flex>
