@@ -1,15 +1,15 @@
 import {
-  Box, Flex, Button, Heading, FormControl, FormLabel, Select,
+  Box,
+  Flex,
+  Button,
+  Heading,
+  FormControl,
+  FormLabel,
+  Select,
 } from '@chakra-ui/core';
 
 const Index: React.FC = () => (
-  <Flex
-    p={4}
-    width="100vw"
-    bg="red.400"
-    height="100vh"
-    justifyContent="center"
-  >
+  <Flex p={4} width="100vw" bg="red.400" height="100vh" justifyContent="center">
     <Box
       marginTop={1}
       p={3}
@@ -17,7 +17,9 @@ const Index: React.FC = () => (
       width={[1 / 2, 1 / 3]}
       bg="white"
     >
-      <Heading color="gray.700" as="h1" size="xl">Food Roulette</Heading>
+      <Heading color="gray.700" as="h1" size="xl">
+        Food Roulette
+      </Heading>
       <FormControl>
         <Flex
           display="flex"
