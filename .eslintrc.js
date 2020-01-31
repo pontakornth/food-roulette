@@ -5,8 +5,11 @@ module.exports = {
     node: true,
   },
   extends: [
+    'airbnb-typescript',
     'plugin:react/recommended',
-    'airbnb',
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
   ],
   globals: {
     Atomics: 'readonly',
@@ -21,14 +24,27 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: [
-    'react',
     '@typescript-eslint',
+    'react'
   ],
   rules: {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".ts", "tsx"] }],
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/explicit-member-accessibility": "off",
     "no-unused-vars": "off",
-    "react/react-in-jsx-scope": "off"
+    "@typescript-eslint/no-unused-vars": "error",
+    "no-useless-constructor": "off",
+    "@typescript-eslint/no-useless-constructor": "error",
+    "react/react-in-jsx-scope": "off",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+   ]
   },
 };
