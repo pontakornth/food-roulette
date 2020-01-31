@@ -6,7 +6,7 @@ import Background from '../components/Background';
 
 const SubmissionForm: NextPage = () => (
   <Background>
-    <Box color="white" width={[8 / 10]} mt={1} p={3}>
+    <Box bg="white" width={[8 / 10]} mt={1} p={3}>
       <Heading size="2xl">ส่งชื่ออาหาร</Heading>
       <FormControl>
         <FormLabel htmlFor="name">ชื่ออาหาร</FormLabel>
@@ -21,3 +21,5 @@ const SubmissionForm: NextPage = () => (
     </Box>
   </Background>
 );
+
+export default SubmissionForm;
