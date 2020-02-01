@@ -6,7 +6,10 @@ import {
   FormControl,
   FormLabel,
   Select,
+  Link as UILink,
+  Stack,
 } from '@chakra-ui/core';
+import Link from 'next/link';
 
 const Index: React.FC = () => (
   <Flex p={4} width="100vw" bg="red.400" height="100vh" justifyContent="center">
@@ -75,9 +78,12 @@ const Index: React.FC = () => (
             </Select>
           </Box>
         </Flex>
-        <Flex justifyContent="center" textAlign="center">
+        <Stack spacing={4} isInline justifyContent="center" alignItems="baseline" textAlign="center">
           <Button variantColor="red">Submit</Button>
-        </Flex>
+          <Link href="/submit" passHref>
+            <UILink color="blue.500">ส่งชื่ออาหาร</UILink>
+          </Link>
+        </Stack>
       </FormControl>
     </Box>
   </Flex>
