@@ -5,7 +5,7 @@ interface IBackgroundProps {
 }
 
 const Background : React.FC<IBackgroundProps> = ({ children }: IBackgroundProps) => (
-  <Flex p={4} width="100vw" bg="red.400" height="100vh" justifyContent="center">
+  <Flex p={4} alignItems="top" width="100vw" bg="red.400" height="100vh" justifyContent="center">
     {children}
   </Flex>
 );
