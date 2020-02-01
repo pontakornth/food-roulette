@@ -6,9 +6,9 @@ import Background from '../components/Background';
 
 const SubmissionForm: NextPage = () => (
   <Background>
-    <Box bg="white" width={[8 / 10]} mt={1} p={3}>
+    <Box bg="white" width={[8 / 10]} mt={1} p={4}>
       <Heading size="2xl">ส่งชื่ออาหาร</Heading>
-      <FormControl>
+      <FormControl mt={3}>
         <FormLabel htmlFor="name">ชื่ออาหาร</FormLabel>
         <Input placeholder="ต้มยำหมูสับกะเพาะปลา" name="name" />
         <FormLabel htmlFor="tags">แท็ก</FormLabel>
